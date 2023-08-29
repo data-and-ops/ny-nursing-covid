@@ -43,9 +43,9 @@ seeds:
     +column_types:
       Area: varchar
       Base_Estimate: bigint
-      2020:bigint
-      2021:bigint
-      2022:bigint
+      2020: bigint
+      2021: bigint
+      2022: bigint
 
   COVID_19_Nursing_Home_Data_08_06_2023:
     +column_types:
