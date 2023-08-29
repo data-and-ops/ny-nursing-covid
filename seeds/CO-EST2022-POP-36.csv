@@ -1,5 +1,4 @@
-table with row headers in column A and column headers in rows 3 through 4 (leading dots indicate sub-parts),,,,
-Area,Base Estimate,2020,2021,2022
+Area,Base_Estimate,y2020,y2021,y2022
 New York,"20,201,230","20,108,296","19,857,492","19,677,151"
 Albany ,"314,838","313,987","316,301","315,811"
 Allegany ,"46,446","47,320","46,921","46,694"
