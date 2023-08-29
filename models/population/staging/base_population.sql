@@ -1,7 +1,7 @@
-//init load
+--init load
 
 with initialLoad as (
     select * from {{ ref('populationData') }}
 )
-select * from intialLoad
+select * from initialLoad
 
