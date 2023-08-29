@@ -1,4 +1,12 @@
-with final as (
+with base_facility as (
+  select * from {{ ref('base_facility') }}
+),
+
+base_population as (
+  select * from {{ ref('base_population') }}
+),
+
+final as (
   -- produce a list of weekly counts by county
   select 
     date_trunc(week_ending, WEEK) as week_ending,
@@ -15,6 +23,6 @@ with final as (
   left join base_population p on trim(f.county) = trim(p.area)
   group by week_ending, county, population
   order by week_ending desc
-),
+)
 
 select * from final
