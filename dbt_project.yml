@@ -36,3 +36,53 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+
+seeds:
+  +quote_columns: true
+  CO-EST2022-POP-36:
+    +column_types:
+      Area: varchar
+      Base_Estimate: bigint
+      2020:bigint
+      2021:bigint
+      2022:bigint
+
+  COVID_19_Nursing_Home_Data_08_06_2023:
+    +column_types:
+     Week Ending: timestamp_tz
+     Federal Provider Number: varchar
+     Provider Name: varchar
+     Provider Address: varchar
+     Provider City: varchar
+     Provider State: varchar
+     Provider Zip Code: varchar
+     Provider Phone Number: varchar
+     County: varchar
+     Submitted Data: varchar
+     Passed Quality Assurance Check: varchar
+     Residents Weekly Confirmed COVID-19: int
+     Residents Total Confirmed COVID-19: int
+     Residents Weekly All Deaths: int
+     Residents Total All Deaths: int
+     Residents Weekly COVID-19 Deaths: int
+     Residents Total COVID-19 Deaths: int
+     Number of All Beds: int
+     Total Number of Occupied Beds: int
+     Residents Hospitalizations with Confirmed COVID-19: int
+     Residents Hospitalizations with Confirmed COVID-19 and Up to Date with Vaccines: int
+     Staff Weekly Confirmed COVID-19: int
+     Staff Total Confirmed COVID-19: int 
+     Weekly Resident Confirmed COVID-19 Cases Per 1,000 Residents: int
+     Weekly Resident COVID-19 Deaths Per 1,000 Residents: int
+     Total Resident Confirmed COVID-19 Cases Per 1,000 Residents: int
+     Total Resident Confirmed COVID-19 Deaths Per 1,000 Residents: int
+     Number of Residents who are Up to Date on COVID-19 Vaccinations, 14 DAys or More Before Positive Test: int
+     Number of Residents Staying in this Facility for At Least 1 Day This Week: int
+     Number of All Healthcare Personnel Eligible to Work in this Facility for At Least 1 Day This Week who Received a Completed COVID-19 Vaccination at Any Time: int	
+     Recent Percentage of Current Healthcare Personnel who Received a Completed COVID-19 Vaccination at Any Time: int	
+     Percentage of Current Healthcare Personnel who Received a Completed COVID-19 Vaccination at Any Time	Number of Residents Staying in this Facility for At Least 1 Day This Week Up to Date with COVID-19 Vaccines: int	
+     Recent Percentage of Current Residents Up to Date with COVID-19 Vaccines: decimal(15,2)
+     Percentage of Current Residents Up to Date with COVID-19 Vaccines: decimal(15,2)
+     Number of Healthcare Personnel Eligible to Work in this Facility for At Least 1 Day This Week Up to Date with COVID-19 Vaccines: int
+     Recent Percentage of Current Healthcare Personnel Up to Date with COVID-19 Vaccines: decimal(15,2)	
+     Percentage of Current Healthcare Personnel Up to Date with COVID-19 Vaccines: decimal(15,2)
