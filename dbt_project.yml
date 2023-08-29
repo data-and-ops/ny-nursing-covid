@@ -36,6 +36,10 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+    facility:
+      materialized: table
+    population:
+      materialized: table
 
 seeds:
   +quote_columns: true
