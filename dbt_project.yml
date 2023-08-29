@@ -39,7 +39,7 @@ models:
 
 seeds:
   +quote_columns: true
-  CO-EST2022-POP-36:
+  populationData:
     +column_types:
       Area: varchar
       Base_Estimate: bigint
@@ -47,7 +47,7 @@ seeds:
       y2021: bigint
       y2022: bigint
 
-  COVID_19_Nursing_Home_Data_08_06_2023:
+  covid19_nursing:
     +column_types:
       week_ending: timestamp_tz
       federal_provider_number: varchar
