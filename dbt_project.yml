@@ -43,46 +43,47 @@ seeds:
     +column_types:
       Area: varchar
       Base_Estimate: bigint
-      2020:bigint
-      2021:bigint
-      2022:bigint
+      y2020: bigint
+      y2021: bigint
+      y2022: bigint
 
   covid19_nursing:
     +column_types:
-     Week Ending: timestamp_tz
-     Federal Provider Number: varchar
-     Provider Name: varchar
-     Provider Address: varchar
-     Provider City: varchar
-     Provider State: varchar
-     Provider Zip Code: varchar
-     Provider Phone Number: varchar
-     County: varchar
-     Submitted Data: varchar
-     Passed Quality Assurance Check: varchar
-     Residents Weekly Confirmed COVID-19: int
-     Residents Total Confirmed COVID-19: int
-     Residents Weekly All Deaths: int
-     Residents Total All Deaths: int
-     Residents Weekly COVID-19 Deaths: int
-     Residents Total COVID-19 Deaths: int
-     Number of All Beds: int
-     Total Number of Occupied Beds: int
-     Residents Hospitalizations with Confirmed COVID-19: int
-     Residents Hospitalizations with Confirmed COVID-19 and Up to Date with Vaccines: int
-     Staff Weekly Confirmed COVID-19: int
-     Staff Total Confirmed COVID-19: int 
-     Weekly Resident Confirmed COVID-19 Cases Per 1,000 Residents: int
-     Weekly Resident COVID-19 Deaths Per 1,000 Residents: int
-     Total Resident Confirmed COVID-19 Cases Per 1,000 Residents: int
-     Total Resident Confirmed COVID-19 Deaths Per 1,000 Residents: int
-     Number of Residents who are Up to Date on COVID-19 Vaccinations, 14 DAys or More Before Positive Test: int
-     Number of Residents Staying in this Facility for At Least 1 Day This Week: int
-     Number of All Healthcare Personnel Eligible to Work in this Facility for At Least 1 Day This Week who Received a Completed COVID-19 Vaccination at Any Time: int	
-     Recent Percentage of Current Healthcare Personnel who Received a Completed COVID-19 Vaccination at Any Time: int	
-     Percentage of Current Healthcare Personnel who Received a Completed COVID-19 Vaccination at Any Time	Number of Residents Staying in this Facility for At Least 1 Day This Week Up to Date with COVID-19 Vaccines: int	
-     Recent Percentage of Current Residents Up to Date with COVID-19 Vaccines: decimal(15,2)
-     Percentage of Current Residents Up to Date with COVID-19 Vaccines: decimal(15,2)
-     Number of Healthcare Personnel Eligible to Work in this Facility for At Least 1 Day This Week Up to Date with COVID-19 Vaccines: int
-     Recent Percentage of Current Healthcare Personnel Up to Date with COVID-19 Vaccines: decimal(15,2)	
-     Percentage of Current Healthcare Personnel Up to Date with COVID-19 Vaccines: decimal(15,2)
+      week_ending: timestamp_tz
+      federal_provider_number: varchar
+      provider_name: varchar
+      provider_address: varchar
+      provider_city: varchar
+      provider_state: varchar
+      provider_zip_code: varchar
+      provider_phone_number: varchar
+      county: varchar
+      submitted_data: varchar
+      passed_quality_assurance_check: varchar
+      residents_weekly_confirmed_covid19: int
+      residents_total_confirmed_covid19: int
+      residents_weekly_all_deaths: int
+      residents_total_all_deaths: int
+      residents_weekly_covid19_deaths: int
+      residents_total_covid19_deaths: int
+      number_of_all_beds: int
+      total_number_of_occupied_beds: int
+      residents_hospitalizations_with_confirmed_covid19: int
+      residents_hospitalizations_with_confirmed_covid19_and_up_to_date_with_vaccines: int
+      staff_weekly_confirmed_covid19: int
+      staff_total_confirmed_covid19: int
+      weekly_resident_confirmed_covid19_cases_per_1000_residents: decimal(15,2)
+      weekly_resident_covid19_deaths_per_1000: decimal(15,2)
+      total_resident_confirmed_covid19_cases_per_1000_residents: decimal(15,2)
+      total_resident_covid19_deaths_per_1000_residents: decimal(15,2)
+      num_residents_up_to_date_on_covid19_vaccine_14d_or_more_before_positive_test: int
+      num_residents_staying_in_facility_for_more_than_one_day_this_week: int
+      num_healthcare_personnel_eligible_to_work_in_facility_for_at_least_1day_this_week: int
+      num_all_healthcare_personnel_eligible_to_work_who_received_covid19_vaccine: int
+      recent_percentage_healthcare_personnel_w_vaccine,percentage_current_healthcare_personnel_wtih_vaccine: decimal(15,2)
+      num_residents_staying_in_facility_at_least_one_day_this_week_with_covid_vaccines: int
+      recent_percentage_of_residents_up_to_date_with_covid19_vaccines: decimal(15,2)
+      percentage_current_residents_up_to_date_with_covid_vaccines: decimal(15,2)
+      num_healthcare_personnel_eligible_to_work_up_to_date_with_covid_vaccines: int
+      recent_percentage_healthcare_personnel_up_to_date_with_covid_vaccines: decimal(15,2)
+      percentage_current_healthcare_personnel_up_to_date_w_covid_vaccines: decimal(15,2)
